@@ -24,6 +24,11 @@ header {
     align-items: center;
 }
 
+ul li a {
+    text-decoration: none;
+
+}
+
 .logo {
     width: 162px;
     height: 50px;
@@ -40,7 +45,7 @@ header {
 
 }
 
-.menu li {
+.menu li a {
     list-style: none;
     color: #626262;
     font-size: 18px;
