@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login.css" />
-    <link rel="script" href="script.js" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="script" href="./login.js" />
+    
     <title>DHflix - Login</title>
   </head>
   <body>
@@ -29,29 +25,39 @@
           <li id="home"><a href="#">Home</a></li>
           <li><a href="#">Itens</a></li>
           <li><a href="#">Sobre Nós</a></li>
-          <li><a href="">Login</a></li>
+          <li><a id="show-login">Login</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="section">
+    
+    
       <div class="blocoform">
-        <span class="material-symbols-outlined">
-          close
-          </span>
-        <form action="">
-          <label for="email">email</label>
-
-          <input type="email" name="email" id="email" placeholder="" />
-
-          <label for="password">senha</label>
-          <input name="password" id="password" placeholder="" />
-        </form>
-        <div class="botao">
-          <button type="submit" name="enviar">entrar</button>
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Login</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Digite o Email">
+          </div>
+          <div class="form-element">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite a senha">
+          </div>
+          <div class="form-element">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Lembrar-me</label>
+          </div>
+          <div class="form-element">
+            <button>Entrar</button>
+          </div>
+          <div class="form-element">
+            <a href="#">Esqueceu sua senha?</a>
+          </div>
         </div>
-        <p>Não possui uma conta? <a href="#">Registre-se</a></p>
       </div>
+     
     </section>
 
     <footer></footer>

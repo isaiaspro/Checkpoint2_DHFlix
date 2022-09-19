@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen&display=swap");
 
 * {
   margin: 0px;
@@ -122,61 +121,100 @@ main {
 }
 /* 
 Formulários */
-
-.material-symbols-outlined {
-  position: absolute;
-  top: 12vw;
-  right: 40vw;
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
 }
-
-.section {
-  max-width: 100%;
-  display: flex;
-  min-height: 40vw;
-  align-items: center;
-  justify-content: center;
+body {
+  background:linear-gradient(to right, #3a7bd5, #3a6073);
+  font-family:"Raleway",sans-serif;
+  height:100vh;
 }
 
 .blocoform {
-  gap: 5vw;
-  flex-direction: column;
-  width: 30vw;
-  height: 30vw;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: inherit;
-  border-radius: 5vw;
-  align-items: center;
+  position:absolute;
+  top:-150%;
+  left:50%;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(1.25);
+  width:20vw;
+  padding:20px 30px;
+  background:#fff;
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius:10px;
+  transition:top 0ms ease-in-out 200ms,
+             opacity 200ms ease-in-out 0ms,
+             transform 200ms ease-in-out 0ms; 
+}
+.blocoform.active {
+  top:50%;
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+  transition:top 0ms ease-in-out 0ms,
+             opacity 200ms ease-in-out 0ms,
+             transform 200ms ease-in-out 0ms;
+}
+.blocoform .close-btn {
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:15px;
+  height:15px;
+  background:#888;
+  color:#eee;
+  text-align:center;
+  line-height:15px;
+  border-radius:15px;
+  cursor:pointer;
+}
+.blocoform .form h2 {
+  text-align:center;
+  color:#222;
+  margin:10px 0px 20px;
+  font-size:25px;
+}
+.blocoform .form .form-element {
+  margin:15px 0px;
+}
+.blocoform .form .form-element label {
+  font-size:14px;
+  color:#222;
+}
+.blocoform .form .form-element input[type="text"],
+.blocoform .form .form-element input[type="password"] {
+  margin-top:5px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;
+}
+.blocoform .form .form-element input[type="checkbox"] {
+  margin-right:5px;
+}
+.blocoform .form .form-element button {
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#222;
+  color:#f5f5f5;
+  border-radius:10px;
+  cursor:pointer;
+}
+.blocoform .form .form-element a {
+  display:block;
+  text-align:right;
+  font-size:15px;
+  color:#1a79ca;
+  text-decoration:none;
+  font-weight:600;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-}
-
-p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 1vw;
-  text-align: center;
-  color: #333333;
-}
-
-.botao button {
-  width: 20vw;
-  height: 2vw;
-  background: #33bb69;
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 1vw;
-  text-align: center;
-  color: #f3f3f3;
-  cursor: pointer;
-  border-radius: 2vw;
-}
-
-@media (min-width: 280px) and (max-width: 819px) {
+@media (min-width: 100px) and (max-width: 1023px) {
   body {
     background-image: url("./IMG/background.png");
     background-repeat: no-repeat;
@@ -190,7 +228,7 @@ p {
     text-align: center;
     left: 0;
     list-style: none;
-    background: #ccc;
+    background: #ffffff;
   }
 
   .menu li {
@@ -205,68 +243,35 @@ p {
   }
 
   /* Formulário */
-  .material-symbols-outlined {
-    position: absolute;
-    top: 60vw;
-    right: 15vw;
-  }
-
-  .section {
-    max-width: 100%;
-    display: flex;
-    min-height: 150vw;
-    align-items: center;
-    justify-content: center;
-  }
 
   .blocoform {
-    gap: 5vw;
-    flex-direction: column;
-    width: 80vw;
-    height: 80vw;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: inherit;
-    border-radius: 5vw;
-    align-items: center;
+    position:absolute;
+    top:-150%;
+    left:50%;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:80vw;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms; 
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 72vw;
-  }
 
-  p {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 4vw;
-    text-align: center;
-    color: #333333;
-  }
 
-  .botao button {
-    width: 70vw;
-    height: 9vw;
-    margin-top: 10vw;
-    background: #33bb69;
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 4vw;
-    text-align: center;
-    color: #f3f3f3;
-    cursor: pointer;
-    border-radius: 2vw;
-  }
+
 }
 
 /* DESKTOP */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px)  {
   body {
     background-image: url("./IMG/background.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vw;
   }
 
   header {
@@ -309,4 +314,6 @@ p {
   footer {
     height: 34px;
   }
+
+ 
 }
