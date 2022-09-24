@@ -10,6 +10,7 @@
 html,
 body {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 
 }
 
@@ -17,13 +18,64 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
-.banner {
+.banner-joker {
     min-height: 18.75rem;
     width: 100%;
     max-width: 1440px;
-    background-image: url(../img/O_senhor_dos_anes_os_aneis_de_poder.jpg);
+    background-image: url(../img/banner_joker.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-after {
+    min-height: 18.75rem;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(../img/banner_after.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-capmarvel {
+    min-height: 18.75rem;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(../img/banner_capmarvel.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-dora {
+    min-height: 18.75rem;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(../img/banner_dora.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-1917 {
+    min-height: 18.75rem;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(../img/banner_1917.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-thor {
+    min-height: 18.75rem;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(../img/banner_thor.jpg);
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,6 +90,9 @@ body {
     justify-content: space-between;
 }
 
+.dados_filme strong {
+    padding-left: 2rem;
+}
 
 h1 {
     font-size: 2rem;
@@ -59,10 +114,19 @@ h1 {
 
 }
 
+
 .equipe {
     display: flex;
     padding-left: 2rem;
     gap: 4rem;
+} 
+
+.equipe .setor .integrantes a {
+    text-decoration: none;
+}
+
+.equipe .setor .integrantes .hifen {
+    color: rgba(0, 133, 255, 0.75);
 }
 
 .titulo_setor {
@@ -124,9 +188,37 @@ h1 {
 
     .banner {
         height: 25rem;
-
         background-position-y: -250px;
+    }
 
+    .banner-joker {
+        height: 25rem;
+        background-position-y: -50px;  
+    }
+
+    .banner-after {
+        height: 25rem;
+        background-position-y: -150px;  
+    }
+
+    .banner-capmarvel {
+        height: 25rem;
+        background-position-y: -30px;  
+    }
+
+    .banner-dora {
+        height: 25rem;
+        background-position-y: -30px;  
+    }
+
+    .banner-1917 {
+        height: 25rem;
+        background-position-y: -30px;  
+    }
+
+    .banner-thor {
+        height: 25rem;
+        background-position-y: -30px;  
     }
 
     h1 {

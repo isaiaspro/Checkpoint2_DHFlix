@@ -22,3 +22,205 @@ main {
     flex-direction: column;
     border: 1px solid black;
 }
+
+header {
+
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+
+}
+
+.logo {
+    width: 162px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url(../img/logo.png);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+}
+
+.menu li a {
+    list-style: none;
+    color: #626262;
+    font-size: 18px;
+
+}
+
+#home {
+    color: #E51B3E;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.home {
+    background-image: url(../img/Rectangle\ 9.png);
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-family: 'Roboto';
+    justify-content: center;
+}
+
+.text-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30% 10%;
+    
+}
+
+.text-home h1 {
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold 700;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.text-home p {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.btn-explorar {
+    margin-top: 20px;
+    width: 100%;
+    height: 71px;
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+}
+
+.home .btn-explorar a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: 80%;
+    background-color: #171717;
+    color: #FFFFFF;
+
+}
+
+@media (min-width:1024px) {
+
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 15px 60px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        padding: 30px 80px 30px;
+
+    }
+
+    .menu li {
+        list-style: none;
+
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        background-image: url(../img/Rectangle\ 2.png);
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto';
+        justify-content: center;
+        padding-bottom: 500px;
+    }
+
+    .home .btn-explorar {
+        margin-top: 20px;
+        margin-left: 220px;
+        width: 250px;
+        height: 60px;
+        background: rgba(51, 187, 105, 0.05);
+        border: 1px solid #33BB69;
+        border-radius: 12px;
+        color: white;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+    }  
+     
+    .home .btn-explorar a {
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .text-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15% 20%;
+        
+    }
+
+    .home .btn-explorar button {
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .text-home p {
+        color: white;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    footer {
+        height: 364px;
+    }
+
+}
