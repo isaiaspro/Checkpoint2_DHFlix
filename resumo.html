@@ -18,7 +18,7 @@
     <link rel="script" href="js/form.js" />
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="logo">
         <img src="./img/logo.png" alt="" />
@@ -34,7 +34,7 @@
           <li id="home"><a href="index.html">Home</a></li>
           <li><a href="#">Itens</a></li>
           <li><a href="#">Sobre Nós</a></li>
-          <li><a href="">Login</a></li>
+          <li><a id="show-login">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -64,7 +64,7 @@
           </div>
         </div>
       </div>
-
+ <div class="blurclass">
       <div class="banner"></div>
       <div class="dados_filme">
         <h1 class="title">O Senhor dos Anéis - Os Anéis de Poder</h1>
@@ -118,8 +118,38 @@
           </div>
         </div>
       </div>
+   </div>
     </main-filme>
+<script>
+document.querySelector("#show-login").addEventListener("click",function(){
+    document.querySelector(".blocoform").classList.add("active");
+  });
+    document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
+    document.querySelector(".blocoform").classList.remove("active");
+  });
+  document.querySelector("#show-login").addEventListener("click",function(){
+    document.querySelector(".header").classList.add("blur");
+  });
+   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
+    document.querySelector(".header").classList.remove("blur");
+  });
+   document.querySelector("#show-login").addEventListener("click",function(){
+    document.querySelector(".footer").classList.add("blur");
+  });
+   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
+    document.querySelector(".footer").classList.remove("blur");
+  });
+   document.querySelector("#show-login").addEventListener("click",function(){
+    document.querySelector(".blurclass").classList.add("blur");
+  });
+   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
+    document.querySelector(".blurclass").classList.remove("blur");
+  });
 
-    <footer>Footer</footer>
+
+
+  
+</script>
+    <footer class="footer">Footer</footer>
   </body>
 </html>
