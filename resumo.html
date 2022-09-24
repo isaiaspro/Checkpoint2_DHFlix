@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DHFlix | Filme</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/resumo.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="script" href="js/form.js" />
-  </head>
 
-  <body class="body">
-    <header class="header">
-      <div class="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DHFlix | Filme</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/resumo.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="script" href="js/form.js" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
         <img src="./img/logo.png" alt="" />
-      </div>
+      </a>
+    </div>
 
-      <nav>
-        <input type="checkbox" class="checkbox" id="checkbox" />
-        <label for="checkbox" class="label-menu"
-          >Menu <span class="hamburguer"></span
-        ></label>
+    <nav>
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label-menu"><span class="hamburguer"></span></label>
 
-        <ul class="menu">
-          <li id="home"><a href="index.html">Home</a></li>
-          <li><a href="#">Itens</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a id="show-login">Login</a></li>
-        </ul>
-      </nav>
-    </header>
+      <ul class="menu">
+        <li id="home"><a href="index.html">Home</a></li>
+        <li><a href="#">Itens</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a id="show-login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main-filme class="main-filme">
-      <div class="blocoform">
-        <div class="close-btn">&times;</div>
-        <div class="form">
-          <h2>Login</h2>
-          <div class="form-element">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Digite o Email" />
-          </div>
-          <div class="form-element">
-            <label for="password">Senha</label>
-            <input type="password" id="password" placeholder="Digite a senha" />
-          </div>
-          <div class="form-element">
-            <input type="checkbox" id="remember-me" />
-            <label for="remember-me">Lembrar-me</label>
-          </div>
-          <div class="form-element">
-            <button>Entrar</button>
-          </div>
-          <div class="form-element">
-            <a href="#">Esqueceu sua senha?</a>
-          </div>
+  <main-filme class="main-filme">
+    <div class="blocoform">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Login</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite o Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite a senha" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Lembrar-me</label>
+        </div>
+        <div class="form-element">
+          <button>Entrar</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Esqueceu sua senha?</a>
         </div>
       </div>
- <div class="blurclass">
+    </div>
+    <div class="blurclass">
       <div class="banner"></div>
       <div class="dados_filme">
         <h1 class="title">O Senhor dos Anéis - Os Anéis de Poder</h1>
@@ -108,48 +107,45 @@
 
         <div class="trailer">
           <div class="video">
-            <iframe
-              src="https://www.youtube.com/embed/f5HVRZ_JfjQ"
-              title="YouTube video player"
-              frameborder="0"
+            <iframe src="https://www.youtube.com/embed/f5HVRZ_JfjQ" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
-   </div>
-    </main-filme>
-<script>
-document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".blocoform").classList.add("active");
-  });
-    document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".blocoform").classList.remove("active");
-  });
-  document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".header").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".header").classList.remove("blur");
-  });
-   document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".footer").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".footer").classList.remove("blur");
-  });
-   document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".blurclass").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".blurclass").classList.remove("blur");
-  });
+    </div>
+  </main-filme>
+  <script>
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".blocoform").classList.add("active");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".blocoform").classList.remove("active");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".header").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".header").classList.remove("blur");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".footer").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".footer").classList.remove("blur");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".blurclass").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".blurclass").classList.remove("blur");
+    });
 
 
 
-  
-</script>
-    <footer class="footer">Footer</footer>
-  </body>
+
+  </script>
+  <footer class="footer">Footer</footer>
+</body>
+
 </html>
