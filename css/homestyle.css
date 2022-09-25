@@ -6,31 +6,43 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
-body, html {
+
+body,
+html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
+}
+
 main {
   box-sizing: content-box;
   display: flex;
 }
+
 h1 {
   font-size: 1.8em;
   font-weight: 600;
 }
+
 h2 {
   font-size: 1.6em;
   font-weight: bold;
 }
+
 p {
   font-size: 1.1em;
   font-weight: 100;
   text-align: justify;
   text-align: center;
 }
+
+.pbanner {
+  text-align: justify;
+}
+
 .blursection {
   padding: 0.5em;
   margin: auto;
 }
+
 .blursection .card {
   border: 1px;
   margin: 0.5em;
@@ -39,11 +51,13 @@ p {
   height: 450px;
   position: relative;
 }
+
 .blursection .card img {
   width: 100%;
   height: 100%;
   border-radius: 12px;
 }
+
 .descricao {
   position: absolute;
   width: 330px;
@@ -55,14 +69,17 @@ p {
   bottom: 0;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 }
+
 .blursection .card h2 {
   color: black;
   margin: 0.5em;
 }
+
 .blursection .card p {
   color: grey;
   margin: 0.5em;
 }
+
 button {
   width: 250px;
   height: 55px;
@@ -77,7 +94,12 @@ button {
   cursor: pointer;
   text-align: center;
 }
- button a {
+
+.btn-explorar {
+  margin-top: 50px;
+}
+
+button a {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -95,6 +117,7 @@ button {
   text-align: left;
   padding: 30px;
 }
+
 .footer-container span {
   color: #e5e9f1;
   font: 25px;
@@ -106,22 +129,26 @@ button {
   display: inline-block;
   vertical-align: top;
 }
+
 .footer-container .footer-content-3 {
   width: 20%;
   text-align: center;
   margin-left: 25px;
 }
+
 .footer-content-3 {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 15px;
 }
+
 .footer-container .footer-perfil {
   line-height: 12px;
   color: #829990;
   font-size: 18px;
   font-weight: 200;
 }
+
 .footer-container .footer-perfil span {
   display: block;
   color: #fff;
@@ -129,6 +156,7 @@ button {
   font-weight: bolder;
   margin-bottom: 10px;
 }
+
 .footer-container .footer-icons img {
   background: rgb(138, 137, 137);
   display: inline-block;
@@ -144,19 +172,23 @@ button {
   font-size: 20px;
   filter: drop-shadow(19px 14px 15px #000);
 }
+
 .footer-icons img:hover {
   -moz-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
+
 .footer-container .footer-content-3 p {
   color: #929990;
   font-size: 13px;
   padding: 10px;
 }
+
 .footer-container .copyright {
   width: 100%;
 }
+
 .footer-container .copyright p {
   text-align: center;
   color: #829990;
@@ -188,15 +220,18 @@ button {
   footer {
     position: relative;
   }
+
   .footer-container {
     padding: 10px;
   }
+
   .footer-container .footer-content-3 {
     width: 0;
     display: block;
     width: 90%;
     text-align: center;
   }
+
   .footer-container .footer-content-3 i {
     margin-left: 0;
   }
