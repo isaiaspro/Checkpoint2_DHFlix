@@ -51,23 +51,29 @@ h1 {
 
 .estrelas {
     padding-left: 2rem;
+    padding-top: 0.5rem;
+
 }
 
 .estrelas input[type=radio] {
     display: none;
+
 }
 
 .estrelas label i.fa {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+
 }
 
 .estrelas label i.fa:before {
     content: '\f005';
     color: #FC0;
+    cursor: pointer;
 }
 
 .estrelas input[type=radio]:checked~label i.fa:before {
     color: #CCC;
+    cursor: pointer;
 }
 
 /* ESTRELAS */
