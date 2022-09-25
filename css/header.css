@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio do Header */
+
+.header {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.logo {
+    width: 10.125rem;
+    height: 3.125rem;
+}
+
+.menu {
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    height: 0;
+    z-index: 1;
+    transition: 0.5s;
+    margin-top: 0.875rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.menu {
+    visibility: visible;
+    display: block;
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+}
+
+.checkbox:checked~.label-menu .hamburguer {
+    border-top-color: transparent;
+    color: #E51B3E;
+}
+
+.checkbox:checked~.label-menu .hamburguer::before {
+    transform: rotate(135deg);
+    color: #E51B3E;
+}
+
+.checkbox:checked~.label-menu .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+    color: #E51B3E;
+}
+
+.menu a {
+    list-style: none;
+    padding: 1rem;
+    color: #626262;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+
+    color: #E51B3E;
+}
+
+.menu #home a {
+    color: #E51B3E;
+}
+
+/* Menu Hamburguer */
+.label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    cursor: pointer;
+
+}
+
+.hamburguer {
+    border-top: 0.125rem solid;
+    width: 1.125rem;
+    transition: 0.3s;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Fim do Header */
+
+
+
+
+/* SMARTPHONE e TABLET */
+
+@media(max-width:428px),
+(max-width:1023px) {
+
+    /* Inicio do Header */
+
+    .menu {
+        height: 0rem;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        left: 0;
+        list-style: none;
+        background: #ccc;
+    }
+
+    .menu li {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        margin-inline: 1rem;
+
+    }
+
+    /* Fim do Hedaer */
+
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width:1024px) {
+
+    /*Inicio do header */
+
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex !important;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 15px 60px;
+    }
+
+
+    .menu {
+        display: flex !important;
+        visibility: visible !important;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 30px 80px 30px;
+        margin-top: 0;
+        transition: none;
+    }
+
+    .label-menu,
+    .checkbox {
+        display: none;
+    }
+}
