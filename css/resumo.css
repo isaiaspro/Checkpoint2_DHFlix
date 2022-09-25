@@ -143,12 +143,16 @@ h1 {
 
 }
 
+.classificacao {
+    padding-bottom: 1rem;
+}
+
 
 .equipe {
     display: flex;
     padding-left: 2rem;
     gap: 4rem;
-} 
+}
 
 .equipe .setor .integrantes a {
     text-decoration: none;
@@ -222,32 +226,32 @@ h1 {
 
     .banner-joker {
         height: 25rem;
-        background-position-y: -50px;  
+        background-position-y: -50px;
     }
 
     .banner-after {
         height: 25rem;
-        background-position-y: -150px;  
+        background-position-y: -150px;
     }
 
     .banner-capmarvel {
         height: 25rem;
-        background-position-y: -30px;  
+        background-position-y: -30px;
     }
 
     .banner-dora {
         height: 25rem;
-        background-position-y: -30px;  
+        background-position-y: -30px;
     }
 
     .banner-1917 {
         height: 25rem;
-        background-position-y: -30px;  
+        background-position-y: -30px;
     }
 
     .banner-thor {
         height: 25rem;
-        background-position-y: -30px;  
+        background-position-y: -30px;
     }
 
     h1 {
