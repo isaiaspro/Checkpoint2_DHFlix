@@ -13,30 +13,29 @@
     <link rel="stylesheet" href="css/resumo.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header class="header">
-
         <div class="logo">
-            <img src="./img/logo.png" alt="">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="" />
+            </a>
         </div>
-
 
         <nav>
             <input type="checkbox" class="checkbox" id="checkbox" />
-            <label for="checkbox" class="label-menu">Menu <span class="hamburguer"></span></label>
+            <label for="checkbox" class="label-menu"><span class="hamburguer"></span></label>
 
             <ul class="menu">
-                <li id="home"> <a href="index.html">Home</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
                 <li><a href="#">Itens</a></li>
                 <li><a href="#">Sobre Nós</a></li>
-                <li><a href="">Login</a></li>
+                <li><a id="show-login">Login</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main-filme class="main-filme">
@@ -45,27 +44,27 @@
         <div class="blocoform">
             <div class="close-btn">&times;</div>
             <div class="form">
-              <h2>Login</h2>
-              <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Digite o Email">
-              </div>
-              <div class="form-element">
-                <label for="password">Senha</label>
-                <input type="password" id="password" placeholder="Digite a senha">
-              </div>
-              <div class="form-element">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Lembrar-me</label>
-              </div>
-              <div class="form-element">
-                <button>Entrar</button>
-              </div>
-              <div class="form-element">
-                <a href="#">Esqueceu sua senha?</a>
-              </div>
+                <h2>Login</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Digite o Email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite a senha">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembrar-me</label>
+                </div>
+                <div class="form-element">
+                    <button>Entrar</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
             </div>
-          </div>
+        </div>
 
         <div class="banner-thor"></div>
         <div class="dados_filme">
@@ -74,17 +73,33 @@
 
             <h1 class="title">Thor - The Dark World</h1>
 
-            <div class="stars">
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
+            <!-- ESTRELAS -->
+
+            <div class="estrelas">
+                <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1" />
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2" />
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3" />
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4" />
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5" />
             </div>
+
+            <!-- ESTRELAS -->
 
 
             <p class="sinopse">
-                Enquanto Thor (Chris Hemsworth) liderava as últimas batalhas para conquistar a paz entre os Nove Reinos, o maldito elfo negro Malekith (Christopher Eccleston) acordava de um longo sono, sedento de vingança e louco para levar todos para a escuridão eterna. Alertado do perigo por Odin (Anthony Hopkins), o herói precisa contar com a ajuda dos companheiros Volstagg (Ray Stevenson), Sif (Jaimie Alexander), entre outros, e até de seu irmão, o traiçoeiro Loki (Tom Hiddleston), em um plano audacioso para salvar o universo do grande mal. Mas os caminhos de Thor e da amada Jane Foster (Natalie Portman) se cruzam novamente e, dessa vez, a vida dela está realmente em perigo.
+                Enquanto Thor (Chris Hemsworth) liderava as últimas batalhas para conquistar a paz entre os Nove Reinos,
+                o maldito elfo negro Malekith (Christopher Eccleston) acordava de um longo sono, sedento de vingança e
+                louco para levar todos para a escuridão eterna. Alertado do perigo por Odin (Anthony Hopkins), o herói
+                precisa contar com a ajuda dos companheiros Volstagg (Ray Stevenson), Sif (Jaimie Alexander), entre
+                outros, e até de seu irmão, o traiçoeiro Loki (Tom Hiddleston), em um plano audacioso para salvar o
+                universo do grande mal. Mas os caminhos de Thor e da amada Jane Foster (Natalie Portman) se cruzam
+                novamente e, dessa vez, a vida dela está realmente em perigo.
             </p>
 
 
@@ -113,7 +128,10 @@
 
                 <div class="video">
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/npvJ9FTgZbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/npvJ9FTgZbM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
                 </div>
 

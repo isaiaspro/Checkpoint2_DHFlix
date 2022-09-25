@@ -13,30 +13,29 @@
     <link rel="stylesheet" href="css/resumo.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header class="header">
-
         <div class="logo">
-            <img src="./img/logo.png" alt="">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="" />
+            </a>
         </div>
-
 
         <nav>
             <input type="checkbox" class="checkbox" id="checkbox" />
-            <label for="checkbox" class="label-menu">Menu <span class="hamburguer"></span></label>
+            <label for="checkbox" class="label-menu"><span class="hamburguer"></span></label>
 
             <ul class="menu">
-                <li id="home"> <a href="index.html">Home</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
                 <li><a href="#">Itens</a></li>
                 <li><a href="#">Sobre Nós</a></li>
-                <li><a href="">Login</a></li>
+                <li><a id="show-login">Login</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main-filme class="main-filme">
@@ -45,27 +44,27 @@
         <div class="blocoform">
             <div class="close-btn">&times;</div>
             <div class="form">
-              <h2>Login</h2>
-              <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Digite o Email">
-              </div>
-              <div class="form-element">
-                <label for="password">Senha</label>
-                <input type="password" id="password" placeholder="Digite a senha">
-              </div>
-              <div class="form-element">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Lembrar-me</label>
-              </div>
-              <div class="form-element">
-                <button>Entrar</button>
-              </div>
-              <div class="form-element">
-                <a href="#">Esqueceu sua senha?</a>
-              </div>
+                <h2>Login</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Digite o Email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite a senha">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembrar-me</label>
+                </div>
+                <div class="form-element">
+                    <button>Entrar</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
             </div>
-          </div>
+        </div>
 
         <div class="banner-capmarvel"></div>
         <div class="dados_filme">
@@ -74,16 +73,30 @@
 
             <h1 class="title"> Capitain Marvel</h1>
 
-            <div class="stars">
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
-                <span class="star">⭐</span>
+            <!-- ESTRELAS -->
+
+            <div class="estrelas">
+                <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1" />
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2" />
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3" />
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4" />
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5" />
             </div>
 
+            <!-- ESTRELAS -->
+
             <p class="sinopse">
-                Em Capitã Marvel, Carol Danvers (Brie Larson) é uma ex-agente da Força Aérea norte-americana, que, sem se lembrar de sua vida na Terra, é recrutada pelos Kree para fazer parte de seu exército de elite. Inimiga declarada dos Skrull, ela acaba voltando ao seu planeta de origem para impedir uma invasão dos metaformos, e assim vai acabar descobrindo a verdade sobre si, com a ajuda do agente Nick Fury (Samuel L. Jackson) e da gata Goose.
+                Em Capitã Marvel, Carol Danvers (Brie Larson) é uma ex-agente da Força Aérea norte-americana, que, sem
+                se lembrar de sua vida na Terra, é recrutada pelos Kree para fazer parte de seu exército de elite.
+                Inimiga declarada dos Skrull, ela acaba voltando ao seu planeta de origem para impedir uma invasão dos
+                metaformos, e assim vai acabar descobrindo a verdade sobre si, com a ajuda do agente Nick Fury (Samuel
+                L. Jackson) e da gata Goose.
             </p>
 
 
@@ -114,7 +127,10 @@
 
                 <div class="video">
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JhY6Yy4wtb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JhY6Yy4wtb4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
                 </div>
 
