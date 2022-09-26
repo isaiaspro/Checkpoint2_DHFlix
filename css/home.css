@@ -1,161 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
 }
-
 
 main {
-/*     height: 100%; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .home {
-    background-image: url(../img/Rectangle\ 9.png);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
+  background-image: url(../img/Rectangle\ 9.png);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
   align-content: center;
-    font-family: 'Roboto';
-    justify-content: center;
+  font-family: "Roboto";
+  justify-content: center;
 }
 
-.text-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.text-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
-    padding: 30% 10%;
-    
+  padding: 30% 10%;
 }
 
-.titulo{
+.titulo {
   width: 100%;
 }
 
 .text-home .titulo h1 {
-    color: #E51B3E;
+  color: #e51b3e;
   display: block;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold 700;
-    font-size: 72px;
-    line-height: 84px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold 700;
+  font-size: 72px;
+  line-height: 84px;
   text-align: left;
-  
 }
 
 .text-home p {
-    color: white;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-    .home .btn-explorar {
-        width: 250px;
-        height: 70px;
-        background: rgba(51, 187, 105, 0.05);
-        border: 1px solid #33BB69;
-        border-radius: 12px;
-        color: white;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.06em;
-      text-decoration: none;
-    }  
-
- .home a   {
-  color: #FFFFFF;
-    text-decoration: none;
-    align-items: center;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .home .btn-explorar {
-        align-items: center;
-    }
-
-
-.footer {
-    width: 100%;
-    height: 80%;
-    background-color: #171717;
-    color: #FFFFFF;
-
+  width: 250px;
+  height: 70px;
+  background: rgba(51, 187, 105, 0.05);
+  border: 1px solid #33bb69;
+  border-radius: 12px;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.home .btn-explorar:hover {
+  background: #33bb69;
 }
 
-@media (min-width:1024px) {
+.home a {
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+}
 
-     .home {
-        background-image: url(../img/Rectangle\ 2.png);
-        display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-        width: 100%;
-        height: 100%;
-        font-family: 'Roboto';
-        justify-content: center;
-    }
+.home .btn-explorar {
+  align-items: center;
+}
 
-    .home .btn-explorar {
-        width: 250px;
-        height: 70px;
-        background: rgba(51, 187, 105, 0.05);
-        border: 1px solid #33BB69;
-        border-radius: 12px;
-        color: white;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.06em;
-      text-decoration: none;
-    }  
-     
-    .home a  {
-        text-decoration: none;
-        align-items: center;
-    }
+.footer {
+  width: 100%;
+  height: 80%;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .home {
+    background-image: url(../img/Rectangle\ 2.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+    justify-content: center;
+  }
 
   .home .btn-explorar {
-        align-items: center;
-    }
+    width: 250px;
+    height: 70px;
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33bb69;
+    border-radius: 12px;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
 
-    .text-home{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      align-content: center;
-      align-items: center;
-        padding: 15% 20%;
-        
-    }
+  .home a {
+    text-decoration: none;
+    align-items: center;
+  }
 
-    .home .btn-explorar button {
-        text-decoration: none;
-        align-items: center;
-    }
+  .home .btn-explorar {
+    align-items: center;
+  }
 
-    .text-home p {
-        color: white;
-        font-weight: 300;
-        font-size: 22px;
-        line-height: 28px;
-    }
+  .text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 15% 20%;
+  }
 
+  .home .btn-explorar button {
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .text-home p {
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
