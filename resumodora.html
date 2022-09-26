@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-
+        <div class="blursec">
         <div class="banner-dora"></div>
         <div class="dados_filme">
 
@@ -136,16 +136,97 @@
             </div>
 
         </div>
-
+    </div>
 
 
     </main-filme>
 
-    <footer>
-        Footer
+      
+    <footer class="footer-container">
+        <div class="container">
 
+            <div class="footer-content-3">
+                <p class="footer-perfil">
+                    <span>Danilo Gaspar</span>
+                    O que fez....
+                </p>
+                <div class="footer-icons">
+                    <a href="https://github.com/Juliettgarcia" target="_blank"> <img src="img/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="footer-perfil">
+                    <span>Isaias Moresco</span>
+                    O que fez....
+                </p>
+                <div class="footer-icons">
+                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="footer-perfil">
+                    <span>Marcelo Ferreira</span>
+                    O que fez....
+                </p>
+                <div class="footer-icons">
+                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="footer-perfil">
+                    <span>Juliett Garcia</span>
+                    O que fez....
+                </p>
+                <div class="footer-icons">
+                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p>CHECKPOINT 2 - Digital House - 2022</p>
+            </div>
+         
     </footer>
+  
 
+    <script>
+        document.querySelector("#show-login").addEventListener("click", function () {
+          document.querySelector(".blocoform").classList.add("active");
+        });
+        document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+          document.querySelector(".blocoform").classList.remove("active");
+        });
+        document.querySelector("#show-login").addEventListener("click", function () {
+          document.querySelector(".header").classList.add("blur");
+        });
+        document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+          document.querySelector(".header").classList.remove("blur");
+        });
+        document.querySelector("#show-login").addEventListener("click", function () {
+          document.querySelector(".footer-container").classList.add("blur");
+        });
+        document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+          document.querySelector(".footer-container").classList.remove("blur");
+        });
+        document.querySelector("#show-login").addEventListener("click", function () {
+          document.querySelector(".blursec").classList.add("blur");
+        });
+        document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+          document.querySelector(".blursec").classList.remove("blur");
+        });
+    
+    
+    
+    
+      </script>
 </body>
 
 
