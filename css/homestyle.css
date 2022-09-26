@@ -27,6 +27,9 @@ p {
   text-align: justify;
   text-align: center;
 }
+.pbaner{
+  text-align: justify;
+}
 .blursection {
   padding: 0.5em;
   margin: auto;
@@ -77,15 +80,26 @@ button {
   cursor: pointer;
   text-align: center;
 }
- button a {
+
+
+.btn-explorar{
+  margin-top: 50px;
+}
+
+ a {
+  text-decoration: none;
+} 
+
+.descricao button {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   color: white;
-  margin: auto;
   text-align: center;
   text-decoration: none;
-}
+  align-items: center;
+  display:block;
+  }
 
 .footer-container {
   position: relative;
