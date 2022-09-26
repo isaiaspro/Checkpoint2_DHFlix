@@ -82,7 +82,6 @@ body {
 }
 
 .main-filme {
-    min-width: 428px;
     display: flex;
     flex: auto;
     align-items: center;

@@ -19,7 +19,7 @@ body {
   height: 5rem;
   display: flex;
   flex-direction: row;
-  background-color: #423d48;
+  background-color: #202020;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -28,11 +28,12 @@ body {
 
 .logo {
   width: 10.125rem;
-  height: 3.125rem;
+
 }
 
 .logo img {
-  width: 3.2vw;
+  width: 64px;
+  height: 64px;
 }
 
 .menu {
@@ -166,10 +167,6 @@ body {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-  }
-
-  .logo {
-    margin: 15px 60px;
   }
 
   .menu {
