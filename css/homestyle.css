@@ -62,7 +62,7 @@ p {
 .descricao {
   position: absolute;
   width: 330px;
-  height: 400px;
+  height: 330px;
   left: 0px;
   background: #595959;
   border-radius: 12px;
@@ -75,12 +75,12 @@ p {
 
 .blursection .card h2 {
   color: #ffffff;
-  margin: 0.5em;
+  margin: 0.7em;
 }
 
 .blursection .card p {
   color: #ffffff;
-  margin: 0.5em;
+  margin: 1em;
 }
 
 button {
