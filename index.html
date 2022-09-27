@@ -2,62 +2,65 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DHFlix | Home</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHFlix | Home</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/homestyle.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 
-    <header class="header">
+  <header class="header">
 
-        <div class="logo">
-            <img src="./img/logo.png" alt="">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/logo.png" alt="" />
+      </a>
+    </div>
+
+
+
+    <nav>
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label-menu"><span class="hamburguer"></span></label>
+
+      <ul class="menu">
+        <li id="home"> <a href="index.html">Home</a></li>
+        <li><a href="#cards">Catálogo</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a id="show-login">Login</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+  </header>
+
+  <main>
+    <section class="home">
+      <div class="text-home">
+        <div class="titulo">
+          <h1>DH Flix</h1>
         </div>
+        <p class="pbanner">
+          Confira a maior coletânea de filmes que a Digital House tem a te oferecer.
+        </p>
+        <a href="#cards">
+          <button class="btn-explorar">
+            Explorar
+          </button>
+        </a>
 
+      </div>
+    </section>
 
-
-        <nav>
-            <input type="checkbox" class="checkbox" id="checkbox" />
-            <label for="checkbox" class="label-menu"><span class="hamburguer"></span></label>
-
-            <ul class="menu">
-                <li id="home"> <a href="index.html">Home</a></li>
-                <li><a href="#cards">Catálogo</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a id="show-login">Login</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-</header>
-
-    <main>
-        <section class="home">
-            <div class="text-home">
-                <div class="titulo">
-                    <h1>DH Flix</h1>
-                </div>
-                <p class="pbanner">
-                    Confira a maior coletânea de filmes que a Digital House tem a te oferecer.
-                </p>
-              <a href="#cards">
-                <button class="btn-explorar" >
-                    Explorar
-                </button>
-                </a>
-
-            </div>
-        </section>
-      
-              <div class="blocoform">
+    <div class="blocoform">
       <div class="close-btn">&times;</div>
       <div class="form">
         <h2>Login</h2>
@@ -81,18 +84,20 @@
         </div>
       </div>
     </div>
-      
-        <section class="blursection">
-                   
-              <div class="card" id="cards">
+
+    <section class="blursection">
+
+      <div class="card" id="cards">
         <img src="img/img1.png" alt="">
         <div class="descricao">
           <h2>Coringa</h2>
-          <p>Descrição</p>
-          <a href="resumojoker.html">
-          <button>
-            Abrir 
-          </button>
+          <p>Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu
+            caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento
+            popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
+          <a href="resumojoker.html" target="_self">
+            <button>
+              Abrir
+            </button>
           </a>
 
         </div>
@@ -102,158 +107,172 @@
         <img src="img/img2.png" alt="">
         <div class="descricao">
           <h2>After</h2>
-          <p>Descrição</p>
+          <p>Tessa Young é uma jovem com uma vida simples, ótimas notas na escola, muitos amigos e um bom namorado.
+            Todos os próximos passos de sua vida já estão planejados, mas as coisas mudam quando ela conhece um homem
+            atraente e cheio de segredos sombrios.</p>
           <a href="resumoafter.html">
             <button>
-              Abrir 
+              Abrir
             </button>
-            </a>
-          </div>
+          </a>
         </div>
+      </div>
 
       <div class="card">
         <img src="img/img3.png" alt="">
         <div class="descricao">
           <h2>Capitã Marvel</h2>
-          <p>Descrição</p>
+          <p>Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha
+            entre seu povo e os Skrulls. Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem
+            memórias recorrentes de uma outra vida, como Carol Danvers, agente da Força Aérea norte-americana.</p>
           <a href="resumocapmarvel.html">
             <button>
-              Abrir 
+              Abrir
             </button>
-            </a>
-          </div>
+          </a>
         </div>
+      </div>
 
       <div class="card">
         <img src="img/img4.png" alt="">
         <div class="descricao">
           <h2>Dora</h2>
-          <p>Descrição</p>
+          <p>A aventureira Dora rapidamente se vê liderando o macaco Botas, o primo Diego, um misterioso habitante da
+            selva, seus pais e um grupo de adolescentes em uma aventura para resolver um mistério impossível por trás de
+            uma cidade perdida de ouro.</p>
           <a href="resumodora.html">
             <button>
-             Abrir 
+              Abrir
             </button>
-            </a>
-          </div>
+          </a>
         </div>
+      </div>
 
       <div class="card">
         <img src="img/img5.png" alt="">
         <div class="descricao">
           <h2>1917</h2>
-          <p>Descrição</p>
+          <p>Na Primeira Guerra Mundial, dois soldados britânicos recebem ordens aparentemente impossíveis de cumprir.
+            Em uma corrida contra o tempo, eles precisam atravessar o território inimigo e entregar uma mensagem que
+            pode salvar 1.600 de seus companheiros.</p>
           <a href="resumo1917.html">
             <button>
-             Abrir 
+              Abrir
             </button>
-            </a>
-          </div>
+          </a>
         </div>
+      </div>
 
       <div class="card">
         <img src="img/img6.png" alt="">
         <div class="descricao">
           <h2>Thor: O Mundo Sombrio</h2>
-          <p>Descrição</p>
+          <p>Thor precisa contar com a ajuda de seus companheiros e até de seu traiçoeiro irmão Loki em um plano
+            audacioso para salvar o universo. Entretanto, os caminhos de Thor se cruzam com Jane Foster e, dessa vez, a
+            vida dela está realmente em perigo.</p>
           <a href="resumothor.html">
             <button>
-              Abrir 
+              Abrir
             </button>
-            </a>
-          </div>
+          </a>
         </div>
-            <div id="blursection"  ></div>
-        </section>
-    </main>
-
-     
-       <footer class="footer-container">
-        <div class="container">
-
-            <div class="footer-content-3">
-                <p class="footer-perfil">
-                    <span>Danilo Gaspar</span>
-                    O que fez....
-                </p>
-                <div class="footer-icons">
-                    <a href="https://github.com/dangspr" target="_blank"> <img src="img/github.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/danilo-gaspar98/"> <img src="img/linkedin.svg" alt=""></a>
-                </div>
-            </div>
-
-            <div class="footer-content-3">
-                <p class="footer-perfil">
-                    <span>Isaias Moresco</span>
-                    O que fez....
-                </p>
-                <div class="footer-icons">
-                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
-                </div>
-            </div>
-
-            <div class="footer-content-3">
-                <p class="footer-perfil">
-                    <span>Marcelo Ferreira</span>
-                    O que fez....
-                </p>
-                <div class="footer-icons">
-                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
-                </div>
-            </div>
-
-            <div class="footer-content-3">
-                <p class="footer-perfil">
-                    <span>Juliett Garcia</span>
-                    O que fez....
-                </p>
-                <div class="footer-icons">
-                    <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
-                </div>
-            </div>
-
-            <!-- <div class="copyright">
-                <hr>
-                <p>CHECKPOINT 2 - Digital House - 2022</p>
-            </div> -->
-         
-    </footer>
-<script>
-document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".blocoform").classList.add("active");
-  });
-    document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".blocoform").classList.remove("active");
-  });
-  document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".header").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".header").classList.remove("blur");
-  });
-   document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".footer-container").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".footer-container").classList.remove("blur");
-  });
-   document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".home").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".home").classList.remove("blur");
-  });
-     document.querySelector("#show-login").addEventListener("click",function(){
-    document.querySelector(".blursection").classList.add("blur");
-  });
-   document.querySelector(".blocoform .close-btn").addEventListener("click",function(){
-    document.querySelector(".blursection").classList.remove("blur");
-  });
+      </div>
+      <div id="blursection"></div>
+    </section>
+  </main>
 
 
-</script>
+  <footer class="footer-container">
+    <div class="container">
+
+      <div class="footer-content-3">
+        <p class="footer-perfil">
+          <span>Danilo Gaspar</span>
+          O que fez....
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/dangspr" target="_blank"> <img src="img/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/danilo-gaspar98/"> <img src="img/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-content-3">
+        <p class="footer-perfil">
+          <span>Isaias Moresco</span>
+          O que fez....
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-content-3">
+        <p class="footer-perfil">
+          <span>Marcelo Ferreira</span>
+          O que fez....
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-content-3">
+        <p class="footer-perfil">
+          <span>Juliett Garcia</span>
+          O que fez....
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/Juliettgarcia"> <img src="img/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/juliettgarciadev/"> <img src="img/linkedin.svg" alt=""></a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <!-- <hr> -->
+      <p>CHECKPOINT 2 - Digital House - 2022</p>
+    </div>
+
+  </footer>
+  <script>
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".blocoform").classList.add("active");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".blocoform").classList.remove("active");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".header").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".header").classList.remove("blur");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".footer-container").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".footer-container").classList.remove("blur");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".home").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".home").classList.remove("blur");
+    });
+    document.querySelector("#show-login").addEventListener("click", function () {
+      document.querySelector(".blursection").classList.add("blur");
+    });
+    document.querySelector(".blocoform .close-btn").addEventListener("click", function () {
+      document.querySelector(".blursection").classList.remove("blur");
+    });
+
+
+  </script>
 </body>
 
 </html>
