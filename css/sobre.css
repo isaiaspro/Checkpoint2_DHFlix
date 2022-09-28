@@ -6,38 +6,46 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
+
 body,
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
   background: #000;
 }
+
 main {
   box-sizing: content-box;
   display: flex;
   background-color: #161616;
 }
+
 h1 {
   font-size: 1.8em;
   font-weight: 600;
 }
+
 h2 {
   font-size: 1.6em;
   font-weight: bold;
 }
+
 p {
   font-size: 1.1em;
   font-weight: 100;
   text-align: justify;
   text-align: center;
 }
+
 .pbaner {
   text-align: justify;
 }
+
 .blursection {
   padding: 0.5em;
   margin: auto;
 }
+
 .blursection .card {
   border: 1px;
   margin: 0.5em;
@@ -45,10 +53,12 @@ p {
   width: 330px;
   height: 450px;
 }
+
 .blursection .card img {
   width: 100%;
   border-radius: 12px;
 }
+
 .descricao {
   position: absolute;
   width: 330px;
@@ -59,14 +69,17 @@ p {
   bottom: 0;
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 }
+
 .blursection .card h2 {
   color: black;
   margin: 0.5em;
 }
+
 .blursection .card p {
   color: grey;
   margin: 0.5em;
 }
+
 button {
   width: 250px;
   height: 55px;
@@ -105,46 +118,54 @@ a {
   align-items: center;
   display: block;
 }
-.container {
+
+/* .container {
   align-items: end;
   flex-direction: column;
-}
+} */
 
 
 /*Outros Tamanhos*/
 /* cards */
-@media  (max-width: 1079px) {
+/* cards */
+@media (min-width: 1023px) {
   .blursection {
     display: flex;
-    margin: auto;
+    /*! margin: auto; */
     margin-bottom: 4vw;
     margin-top: 4vw;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    }
+    flex-wrap: wrap;
+    max-width: 1080px;
+    /*! justify-content: flex-end; */
+    flex-wrap: nowrap;
+  }
 
-  .container {
+  /* .container {
     display: flex;
     align-items: end;
     flex-direction: row;
-  }
+  } */
 }
 
 
-@media  (min-width: 1080px) {
+@media (min-width: 1025px) {
   .blursection {
-    width: 1600px;
     display: flex;
-    margin: auto;
+    /*! margin: auto; */
     margin-bottom: 4vw;
     margin-top: 4vw;
-    justify-content: center;
+    /*! justify-content: space-between; */
+    /*! margin: auto; */
+    flex-wrap: wrap;
+    gap: 0.8em;
   }
 
-  .container {
+  /* .container {
     display: flex;
     align-items: end;
     flex-direction: row;
-  }
+  } */
 
-} 
+}
