@@ -44,6 +44,9 @@ p {
 .blursection {
   padding: 0.5em;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .blursection .card {
@@ -131,41 +134,28 @@ a {
 @media (min-width: 1023px) {
   .blursection {
     display: flex;
-    /*! margin: auto; */
-    margin-bottom: 4vw;
+     margin-bottom: 4vw;
     margin-top: 4vw;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     max-width: 1080px;
-    /*! justify-content: flex-end; */
     flex-wrap: nowrap;
   }
 
-  /* .container {
-    display: flex;
-    align-items: end;
-    flex-direction: row;
-  } */
+
 }
 
 
 @media (min-width: 1025px) {
   .blursection {
     display: flex;
-    /*! margin: auto; */
     margin-bottom: 4vw;
     margin-top: 4vw;
-    /*! justify-content: space-between; */
-    /*! margin: auto; */
     flex-wrap: wrap;
     gap: 0.8em;
+    max-width: 1000px;
   }
 
-  /* .container {
-    display: flex;
-    align-items: end;
-    flex-direction: row;
-  } */
 
 }
