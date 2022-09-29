@@ -63,6 +63,34 @@ p {
   height: 300px;
 }
 
+#isaias {
+  background-image: url(../img/isaias2.png);
+  background-size: cover;
+  background-position-x: -8px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
+#juliett {
+  background-image: url(../img/juliett.png);
+  background-size: cover;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+
+}
+
+#marcelo {
+  background-image: url(../img/marcelo.png);
+  background-size: cover;
+  background-position-y: -127px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+
+}
+
+
+
 .descricao {
   position: absolute;
   width: 330px;
@@ -133,7 +161,7 @@ a {
 @media (min-width: 1023px) {
   .blursection {
     display: flex;
-     margin-bottom: 4vw;
+    margin-bottom: 4vw;
     margin-top: 4vw;
     flex-direction: row;
     align-items: center;
